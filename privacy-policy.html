@@ -1,9 +1,9 @@
 Privacy Policy for Beach Siege: Overrun
-Last updated: November 7, 2026
+Last updated: November 15, 2026
 
 Beach Siege: Overrun is operated by DubaTech Studio. This policy explains
-how the game handles player information, gameplay analytics, leaderboards
-and in-app purchases.
+how the game handles player information, gameplay analytics, leaderboards,
+account recovery, saved wallets and in-app purchases.
 
 Privacy questions and deletion requests
 Email dubatechstudio@gmail.com with the subject "Beach Siege data request"
@@ -24,9 +24,10 @@ Players under 13, and players who have not answered, use local personal
 best scores. The game does not request a public leaderboard name, connect
 them to Unity leaderboards, initialize Google Play Games or Game Center,
 or collect first-party gameplay analytics. Scores and progress stay on
-the device, subject to the device's backup settings. Native store checkout
-and its purchase records remain governed by the platform account and
-parental purchase-approval settings. The age restriction is not a parental
+the device, subject to the device's backup settings. In account-enabled releases, new purchases require a linked online game
+account and are unavailable to players who cannot use online services.
+Platform store records and parental purchase-approval settings remain
+subject to Apple or Google's policies. The age restriction is not a parental
 consent flow for online services.
 Earlier releases, including earlier iOS builds, do not have this age gate.
 If a child used online services in an earlier release, contact us to
@@ -38,6 +39,32 @@ powers, and purchase-delivery records on your device. These records keep
 your progress and help prevent a purchase from being granted twice.
 Local records remain with the app's saved data until that data is cleared.
 Your device or platform backup settings may retain copies.
+
+Accounts, cloud wallets and recovery
+In account-enabled releases, eligible players can choose Sign in with
+Apple on iOS or Google Play Games on Android. Unity Authentication links
+the platform identity to a game player ID. This feature does not request
+your platform password, name or email address.
+Our account service at orbs-stats.com stores the player ID, Pearl and item
+balances, purchased powers, unlocks, tower levels and experience,
+contracts, personal bests and other saved game progress. We process these
+records to operate the game, sync your save, recover progress and deliver
+and protect purchases. Account data is separate from optional gameplay
+analytics and remains necessary while using a cloud account even if
+Gameplay Analytics is turned off.
+The first migration imports the available device save once and keeps a
+device backup. Later recovery uses the remaining saved balance, without
+refilling already-spent supplies. Offline changes remain on the device
+until synced and cannot be recovered elsewhere before upload.
+Use the same platform sign-in to recover your account. Linking Apple and
+Android identities to one shared account is not currently available.
+Store test purchases use a separate test wallet; test credits do not
+become real-money wallet credits.
+Cloud accounts remain until deletion is requested. The service keeps
+fourteen daily backup copies on the hosting server and up to thirty
+dated encrypted daily copies on a separate home server. Copies expire
+as new successful backups replace them. Backups are restricted to
+disaster recovery, and deletion records must be reapplied after a restore.
 
 Leaderboards and platform game services
 Online leaderboards use a player identifier, your chosen display name,
@@ -92,17 +119,23 @@ The game processes product identifiers, transaction identifiers, purchase
 receipts or tokens, purchase status and entitlement information to verify
 purchases, deliver Pearls, gameplay items and powers, restore eligible
 purchases and handle refunds or revocations.
-Purchase-delivery records are stored with the game's local save. The
-store maintains transaction records under its own policies. DubaTech's
-gameplay analytics service does not receive purchase receipts.
+In account-enabled releases, the server checks purchases with Apple or
+Google and stores transaction IDs, product IDs, delivered rewards and
+encrypted purchase proofs to recheck refunds and revocations. Local
+purchase-delivery records also remain with the game's save. Older
+releases may keep delivery records only on the device. The store retains
+its own transaction records. DubaTech's gameplay analytics service does
+not receive purchase receipts.
 Payment-card details are handled by the store and are not provided to the
-game. Clearing local data can remove consumable balances. Eligible
-permanent purchases can be restored through the same platform account.
+game. Unsynced or guest consumable balances can be lost when local data
+is cleared. Linked accounts recover the remaining synced balance through
+the same game sign-in. Eligible permanent purchases can be restored
+through the same platform store account, subject to game-account ownership.
 
 Service providers and data sharing
 We use Unity for authentication and leaderboards, Apple and Google for
 platform game services and store purchases, and hosting providers for our
-gameplay analytics service. Information needed for these features is
+gameplay analytics and account wallet services. Information needed for these features is
 processed by the relevant providers. Providers may also process network
 information, technical identifiers and service diagnostics under their
 own policies.
@@ -114,8 +147,9 @@ https://www.apple.com/legal/privacy/
 https://policies.google.com/privacy
 
 Security
-Our gameplay analytics uploads use HTTPS. Access to the analytics dashboard
-is restricted to the operator. We use reasonable measures to protect
+Our gameplay analytics and account uploads use HTTPS. Operator access to
+the dashboard and wallet service is restricted. Purchase proofs and
+independent backup copies are encrypted. We use reasonable measures to protect
 information handled by the game and its services.
 
 Requests and deletion
@@ -132,6 +166,21 @@ leaderboard entries and authentication records controlled by us. We may
 retain the correspondence needed to handle the request. Online scores are
 otherwise kept until deleted or the leaderboard is reset; first-party
 analytics follows the 90-day retention periods above.
+In account-enabled releases, Settings > Account and Recovery > Delete
+Account requests deletion after confirmation and a fresh platform sign-in.
+The current in-app process removes the Unity game identity, active cloud
+wallet, progress, operation log and encrypted purchase proofs, and clears
+game progress and account backups on that device. Use the email request
+above for associated leaderboard records or other remaining records; we
+may need your player ID to locate them. You can also request account and
+associated data deletion without reinstalling the app at
+https://orbs-stats.com/beach-siege-wallet/delete-account.html
+Deletion does not refund purchases or delete your Apple or Google account.
+Minimal transaction and migration records may remain to prevent duplicate
+purchase credits and abuse. Restricted disaster-recovery backups expire
+under the backup schedule above and are not used to reinstate deleted
+accounts. Optional analytics uses a separate installation ID; include the
+privacy request details to identify and delete those records as well.
 Clearing device data removes local game records, subject to your platform's
 backup behavior. Contact the relevant provider for store-account or
 platform-service records it controls. Transaction information may be
